@@ -1,0 +1,44 @@
+{
+    "resourceType": "Patient",
+    "active": true,
+    "name": [
+        {
+            "use": "official",
+            "family": "Flanders",
+            "given": [
+                "Nedward",
+                "Ned"
+            ],
+            "prefix": ["Mr"]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "5555551112",
+            "use": "home"
+        },
+        {
+            "system": "email",
+            "value": "ned.flanders@email.com",
+            "use": "home"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1989-12-17",
+    "address": [
+        {
+            "use": "home",
+            "type": "postal",
+            "text": "744 Evergreen Terrace Springfield, IL 90210",
+            "line": [
+                "744 Evergreen Terrace"
+            ],
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "90210",
+            "country": "USA"
+        }
+    ]
+}
+

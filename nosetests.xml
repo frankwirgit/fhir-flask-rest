@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="2" failures="0" skip="0"><testcase classname="nose.failure.Failure" name="runTest" time="0.002"><error type="builtins.IndentationError" message="unexpected indent (test_models.py, line 99)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;gunicorn.error: INFO: Initializing database&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/local/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+  File "/usr/local/lib/python3.7/site-packages/nose/failure.py", line 39, in runTest
+    raise self.exc_val.with_traceback(self.tb)
+  File "/usr/local/lib/python3.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/usr/local/lib/python3.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/usr/local/lib/python3.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/usr/local/lib/python3.7/imp.py", line 234, in load_module
+    return load_source(name, filename, file)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+unexpected indent (test_models.py, line 99)
+-------------------- >> begin captured logging << --------------------
+gunicorn.error: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="builtins.ImportError" message="cannot import name 'Pat' from 'service.models' (/workspace/service/models.py)"><![CDATA[Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/local/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+  File "/usr/local/lib/python3.7/site-packages/nose/failure.py", line 39, in runTest
+    raise self.exc_val.with_traceback(self.tb)
+  File "/usr/local/lib/python3.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/usr/local/lib/python3.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/usr/local/lib/python3.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/usr/local/lib/python3.7/imp.py", line 234, in load_module
+    return load_source(name, filename, file)
+  File "/usr/local/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/workspace/tests/test_service.py", line 22, in <module>
+    from service.models import Pat, db
+ImportError: cannot import name 'Pat' from 'service.models' (/workspace/service/models.py)
+]]></error></testcase></testsuite>
